@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    body {
+        background-color: beige;
+      }
+
+      .b_skyblue{
+        background-color: red;
+      }
+
+      .b_seagreen{
+        background-color: blue;
+      }
+
+      .b_plum{
+        background-color: green;
+      }
+
+
+    
+</style>
+<body>
+    <div class="btns">
+        <button class="btn_a">빨간색으로변경</button>
+        <button class="btn_b">파란색으로변경</button>
+        <button class="btn_c">초록색으로변경</button>
+    </div>
+    <script>
+    
+    const  Skyblue = document.querySelector('.btn_a');
+              Skyblue.addEventListener('click', function(){
+                document.body.classList.toggle('b_skyblue');
+            });
+              
+              Skyblue.addEventListener('click', function(){
+                document.body.classList.remove('b_seagreen');
+            });
+
+              Skyblue.addEventListener('click', function(){
+                document.body.classList.remove('b_plum');
+            });
+
+     const  Seagreen = document.querySelector('.btn_b');
+              Seagreen.addEventListener('click', function(){
+                document.body.classList.toggle('b_seagreen');
+            });
+              
+              Seagreen.addEventListener('click', function(){
+                document.body.classList.remove('b_skyblue');
+            });
+
+              Seagreen.addEventListener('click', function(){
+                document.body.classList.remove('b_plum');
+            });
+
+     const  Plum = document.querySelector('.btn_c');
+              Plum.addEventListener('click', function(){
+                document.body.classList.toggle('b_plum');
+            });
+              
+              Plum.addEventListener('click', function(){
+                document.body.classList.remove('b_seagreen');
+            });
+
+              Plum.addEventListener('click', function(){
+                document.body.classList.remove('b_skyblue');
+            });
+
+
+
+
+     
+    
+    </script>
+</body>
+</html>
